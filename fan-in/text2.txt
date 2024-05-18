@@ -1,0 +1,3 @@
+File 2: We are using os.Open to open the file and bufio package to read data from the file NewScanner() returns *Scanner which further has a Scan(): Scan advances the Scanner to the next token and will return false when it reached EOF or error.
+File 2: Data we receive on looping with Scan() we keep sending to our output channel from all our input files with the common readData func. until the channel is closed.
+File 2: Then we pick all the “receive” directional channels which have our data from multiple inputs and merge them together to a common out channel.
